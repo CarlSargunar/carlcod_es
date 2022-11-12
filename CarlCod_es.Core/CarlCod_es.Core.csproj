@@ -10,4 +10,9 @@
     <Folder Include="Models\Generated\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Umbraco.Cms.Core" Version="10.3.2" />
+    <PackageReference Include="Umbraco.Cms.Infrastructure" Version="10.3.2" />
+  </ItemGroup>
+
 </Project>
