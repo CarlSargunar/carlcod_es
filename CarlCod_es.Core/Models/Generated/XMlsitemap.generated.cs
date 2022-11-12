@@ -16,7 +16,7 @@ using Umbraco.Cms.Infrastructure.ModelsBuilder;
 using Umbraco.Cms.Core;
 using Umbraco.Extensions;
 
-namespace CarlCod_es.Models
+namespace CarlCod_es.Core.Models
 {
 	/// <summary>XML Sitemap</summary>
 	[PublishedModel("xMLSitemap")]
@@ -54,13 +54,13 @@ namespace CarlCod_es.Models
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[ImplementPropertyType("hideFromXMLSitemap")]
-		public virtual bool HideFromXmlsitemap => global::CarlCod_es.Models.VisibilityControls.GetHideFromXmlsitemap(this, _publishedValueFallback);
+		public virtual bool HideFromXmlsitemap => global::CarlCod_es.Core.Models.VisibilityControls.GetHideFromXmlsitemap(this, _publishedValueFallback);
 
 		///<summary>
 		/// Umbraco Navi Hide: Tick this box if you want to hide this page from the navigation and from search results
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[ImplementPropertyType("umbracoNaviHide")]
-		public virtual bool UmbracoNaviHide => global::CarlCod_es.Models.VisibilityControls.GetUmbracoNaviHide(this, _publishedValueFallback);
+		public virtual bool UmbracoNaviHide => global::CarlCod_es.Core.Models.VisibilityControls.GetUmbracoNaviHide(this, _publishedValueFallback);
 	}
 }

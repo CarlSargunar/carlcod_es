@@ -1,22 +1,12 @@
-﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Home>
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Home>
 
-@using Clean.Core.Models.ViewModels
+
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels
 
 @{
     Layout = "master.cshtml";
 }
 
-@await Html.PartialAsync("~/Views/Partials/pageHeader.cshtml", new PageHeaderViewModel(Model.Name, Model.Title, Model.Subtitle, Model.MainImage))
+@await Html.PartialAsync("~/Views/Partials/pageHeader.cshtml", new PageHeader(Model.Name, Model.Title, Model.Subtitle, Model.MainImage))
 
-
-<h1>This is a test</h1>
-
-@if (Model.MainContent != null)
-{
-<article>
-    @Html.GetGridHtml(Model, "mainContent", "Clean")
-</article>
-}
-
-@await Html.PartialAsync("~/Views/Partials/latestArticles.cshtml")
+@Html.Partial("~/Views/Partials/homepageArticles.cshtml")ync("~/Views/Partials/latestArticles.cshtml")

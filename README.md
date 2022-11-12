@@ -24,7 +24,7 @@ Once you've verified the project works, we'll add a new .NET 6 Class library pro
 
     dotnet new classlib -n "CarlCod_es.Core" --framework net6.0
     dotnet add "CarlCod_es.Core" package Umbraco.Cms.Core
-    dotnet add "CarlCod_es.Core" package Umbraco.Cms.Core
+    dotnet add "CarlCod_es.Core" package Umbraco.Cms.Infrastructure
     dotnet sln add "CarlCod_es.Core"
 
 Add the uSync project to the website, and configure it for Content Mode
@@ -39,5 +39,3 @@ Disable uSync Content Mode by adding the following to appsettings
             "ExportOnSave": "Settings" 
         }
     }
-
-

@@ -16,7 +16,7 @@ using Umbraco.Cms.Infrastructure.ModelsBuilder;
 using Umbraco.Cms.Core;
 using Umbraco.Extensions;
 
-namespace CarlCod_es.Models
+namespace CarlCod_es.Core.Models
 {
 	// Mixin Content Type with alias "visibilityControls"
 	/// <summary>Visibility Controls</summary>

@@ -2,7 +2,7 @@
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels
 
 @{
-    var homePage = Model.AncestorOrSelf<CarlCod_es.Models.Home>();
+    var homePage = Model.AncestorOrSelf<Home>();
 }
 
 <!-- Footer-->
@@ -16,9 +16,9 @@
                         @foreach (var item in homePage.SocialLinks)
                         {
                             string iconClass = "";
-                            if (!string.IsNullOrWhiteSpace(item.Icon))
+                            if (!string.IsNullOrWhiteSpace(item.IconClass))
                             {
-                                var iconValues = item.Icon.ToLower().Split('-');
+                                var iconValues = item.IconClass.ToLower().Split('-');
                                 iconClass = iconValues[1].Trim().Replace("brands", "fab")
                                 .Replace("solid", "fas")
                                 .Replace("regular", "far") + " fa-" + iconValues[0].Trim().Replace(" ", "-");

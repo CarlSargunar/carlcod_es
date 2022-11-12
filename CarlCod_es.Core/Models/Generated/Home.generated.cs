@@ -16,7 +16,7 @@ using Umbraco.Cms.Infrastructure.ModelsBuilder;
 using Umbraco.Cms.Core;
 using Umbraco.Extensions;
 
-namespace CarlCod_es.Models
+namespace CarlCod_es.Core.Models
 {
 	/// <summary>Home</summary>
 	[PublishedModel("home")]
@@ -55,7 +55,7 @@ namespace CarlCod_es.Models
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("socialLinks")]
-		public virtual global::System.Collections.Generic.IEnumerable<global::CarlCod_es.Models.IconLinkItem> SocialLinks => global::CarlCod_es.Models.FooterControls.GetSocialLinks(this, _publishedValueFallback);
+		public virtual global::System.Collections.Generic.IEnumerable<global::CarlCod_es.Core.Models.IconLinkItem> SocialLinks => global::CarlCod_es.Core.Models.FooterControls.GetSocialLinks(this, _publishedValueFallback);
 
 		///<summary>
 		/// Subtitle: Enter a subtitle for this page
@@ -63,7 +63,7 @@ namespace CarlCod_es.Models
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("subtitle")]
-		public virtual string Subtitle => global::CarlCod_es.Models.HeaderControls.GetSubtitle(this, _publishedValueFallback);
+		public virtual string Subtitle => global::CarlCod_es.Core.Models.HeaderControls.GetSubtitle(this, _publishedValueFallback);
 
 		///<summary>
 		/// Title: Enter the title for the page. If this is empty the name of the page will be used.
@@ -71,7 +71,7 @@ namespace CarlCod_es.Models
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("title")]
-		public virtual string Title => global::CarlCod_es.Models.HeaderControls.GetTitle(this, _publishedValueFallback);
+		public virtual string Title => global::CarlCod_es.Core.Models.HeaderControls.GetTitle(this, _publishedValueFallback);
 
 		///<summary>
 		/// Main Image: Choose the main image for this page
@@ -79,7 +79,7 @@ namespace CarlCod_es.Models
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("mainImage")]
-		public virtual global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent MainImage => global::CarlCod_es.Models.MainImageControls.GetMainImage(this, _publishedValueFallback);
+		public virtual global::Umbraco.Cms.Core.Models.PublishedContent.IPublishedContent MainImage => global::CarlCod_es.Core.Models.MainImageControls.GetMainImage(this, _publishedValueFallback);
 
 		///<summary>
 		/// Meta Description: Enter the meta description for this page
@@ -87,7 +87,7 @@ namespace CarlCod_es.Models
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("metaDescription")]
-		public virtual string MetaDescription => global::CarlCod_es.Models.SEocontrols.GetMetaDescription(this, _publishedValueFallback);
+		public virtual string MetaDescription => global::CarlCod_es.Core.Models.SEocontrols.GetMetaDescription(this, _publishedValueFallback);
 
 		///<summary>
 		/// Meta Keywords: Enter the keywords for this page
@@ -95,7 +95,7 @@ namespace CarlCod_es.Models
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("metaKeywords")]
-		public virtual global::System.Collections.Generic.IEnumerable<string> MetaKeywords => global::CarlCod_es.Models.SEocontrols.GetMetaKeywords(this, _publishedValueFallback);
+		public virtual global::System.Collections.Generic.IEnumerable<string> MetaKeywords => global::CarlCod_es.Core.Models.SEocontrols.GetMetaKeywords(this, _publishedValueFallback);
 
 		///<summary>
 		/// Meta Name: Enter the meta name for this page
@@ -103,6 +103,6 @@ namespace CarlCod_es.Models
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("metaName")]
-		public virtual string MetaName => global::CarlCod_es.Models.SEocontrols.GetMetaName(this, _publishedValueFallback);
+		public virtual string MetaName => global::CarlCod_es.Core.Models.SEocontrols.GetMetaName(this, _publishedValueFallback);
 	}
 }

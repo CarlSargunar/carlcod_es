@@ -16,7 +16,7 @@ using Umbraco.Cms.Infrastructure.ModelsBuilder;
 using Umbraco.Cms.Core;
 using Umbraco.Extensions;
 
-namespace CarlCod_es.Models
+namespace CarlCod_es.Core.Models
 {
 	// Mixin Content Type with alias "footerControls"
 	/// <summary>Footer Controls</summary>
@@ -25,7 +25,7 @@ namespace CarlCod_es.Models
 		/// <summary>Social Links</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		global::System.Collections.Generic.IEnumerable<global::CarlCod_es.Models.IconLinkItem> SocialLinks { get; }
+		global::System.Collections.Generic.IEnumerable<global::CarlCod_es.Core.Models.IconLinkItem> SocialLinks { get; }
 	}
 
 	/// <summary>Footer Controls</summary>
@@ -65,11 +65,11 @@ namespace CarlCod_es.Models
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("socialLinks")]
-		public virtual global::System.Collections.Generic.IEnumerable<global::CarlCod_es.Models.IconLinkItem> SocialLinks => GetSocialLinks(this, _publishedValueFallback);
+		public virtual global::System.Collections.Generic.IEnumerable<global::CarlCod_es.Core.Models.IconLinkItem> SocialLinks => GetSocialLinks(this, _publishedValueFallback);
 
 		/// <summary>Static getter for Social Links</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "10.3.2+e7fae14")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static global::System.Collections.Generic.IEnumerable<global::CarlCod_es.Models.IconLinkItem> GetSocialLinks(IFooterControls that, IPublishedValueFallback publishedValueFallback) => that.Value<global::System.Collections.Generic.IEnumerable<global::CarlCod_es.Models.IconLinkItem>>(publishedValueFallback, "socialLinks");
+		public static global::System.Collections.Generic.IEnumerable<global::CarlCod_es.Core.Models.IconLinkItem> GetSocialLinks(IFooterControls that, IPublishedValueFallback publishedValueFallback) => that.Value<global::System.Collections.Generic.IEnumerable<global::CarlCod_es.Core.Models.IconLinkItem>>(publishedValueFallback, "socialLinks");
 	}
 }
