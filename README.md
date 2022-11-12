@@ -20,6 +20,22 @@ Which results in the following install script
     dotnet run --project "CarlCod_es"
     #Running
 
-Once you've verified the project works, we'll add a new project, and a nuget project
+Once you've verified the project works, we'll add a new .NET 6 Class library project. 
+
+    dotnet new classlib -n "CarlCod_es.Core" --framework net6.0
+    dotnet sln add "CarlCod_es.Core"
+
+Add the uSync project to the website, and configure it for Content Mode
+
+    dotnet add "CarlCod_es" package uSync 
+
+Disable uSync Content Mode by adding the following to appsettings
+
+    "uSync": {
+        "Settings": {
+            // See https://github.com/KevinJump/uSync/issues/232
+            "ExportOnSave": "Settings" 
+        }
+    }
 
 
