@@ -1,6 +1,5 @@
-﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.Contact>
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Contact>
 
-@using Clean.Core.Models.ViewModels
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels
 
 @{
@@ -12,7 +11,7 @@
     }
 }
 
-@await Html.PartialAsync("~/Views/Partials/pageHeader.cshtml", new PageHeaderViewModel(Model.Name, Model.Title, Model.Subtitle, Model.MainImage))
+@await Html.PartialAsync("~/Views/Partials/pageHeader.cshtml", new PageHeader(Model.Name, Model.Title, Model.Subtitle, Model.MainImage))
 
 <main class="mb-4">
     <div class="container px-4 px-lg-5">
