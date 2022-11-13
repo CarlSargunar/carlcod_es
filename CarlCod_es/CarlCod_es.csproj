@@ -33,7 +33,6 @@
     <None Include="Views\Partials\metaData.cshtml" />
     <None Include="Views\Partials\pageHeader.cshtml" />
     <None Include="Views\Partials\xmlSitemap.cshtml" />
-    <None Include="Views\search.cshtml" />
     <None Include="Views\xMLSitemap.cshtml" />
     <None Include="Views\_ViewImports.cshtml" />
   </ItemGroup>

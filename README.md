@@ -4,7 +4,6 @@
 
 Using https://psw.codeshare.co.uk/ generate a script for a clean Umbraco install. I used the following settings:
 
-
 ![Installation Settings](media/psw.png)
 
 Which results in the following install script
