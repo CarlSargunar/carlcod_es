@@ -24,11 +24,14 @@ Once you've verified the project works, we'll add a new .NET Class library proje
     dotnet new classlib -n "CarlCod_es.Core"
     dotnet add "CarlCod_es.Core" package Umbraco.Cms.Core
     dotnet add "CarlCod_es.Core" package Umbraco.Cms.Infrastructure
+    dotnet add "CarlCod_es.Core" package Umbraco.Cms.Web.Website
     dotnet sln add "CarlCod_es.Core"
 
 Add the uSync project to the website, and configure it for Content Mode
 
     dotnet add "CarlCod_es" package uSync 
+
+    dotnet add "CarlCod_es" reference "CarlCod_es.Core"
 
 Disable uSync Content Mode by adding the following to appsettings
 
