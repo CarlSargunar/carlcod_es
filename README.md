@@ -9,7 +9,7 @@ Using https://psw.codeshare.co.uk/ generate a script for a clean Umbraco install
 Which results in the following install script
 
     # Ensure we have the latest Umbraco templates
-    dotnet new -i Umbraco.Templates::10.3.2
+    dotnet new -i Umbraco.Templates
 
     # Create solution/project
     dotnet new sln --name "CarlCod_es"
@@ -21,7 +21,7 @@ Which results in the following install script
 
 Once you've verified the project works, we'll add a new .NET 6 Class library project. 
 
-    dotnet new classlib -n "CarlCod_es.Core" --framework net6.0
+    dotnet new classlib -n "CarlCod_es.Core"
     dotnet add "CarlCod_es.Core" package Umbraco.Cms.Core
     dotnet add "CarlCod_es.Core" package Umbraco.Cms.Infrastructure
     dotnet sln add "CarlCod_es.Core"
