@@ -33,8 +33,9 @@ Add the uSync project to the website, and configure it for Content Mode
 Disable uSync Content Mode by adding the following to appsettings
 
     "uSync": {
-        "Settings": {
-            // See https://github.com/KevinJump/uSync/issues/232
-            "ExportOnSave": "Settings" 
+    "Settings": {
+        // See https://github.com/KevinJump/uSync/issues/232
+        "ExportOnSave": "Settings",
+        "UiEnabledGroups" : "Settings"
         }
     }
