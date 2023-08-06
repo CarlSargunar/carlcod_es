@@ -32,6 +32,7 @@ namespace CarlCod_es
             services.AddUmbraco(_env, _config)
                 .AddBackOffice()
                 .AddWebsite()
+                .AddDeliveryApi()
                 .AddComposers()
                 .Build();
         }
