@@ -48,3 +48,5 @@ Disable uSync Content Mode by adding the following to appsettings. Reference : h
 To run the main project run
 
     dotnet run --project "CarlCod_es"
+
+To backup the datababase on the MSSql Database, run the following command
