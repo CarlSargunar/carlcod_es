@@ -13,7 +13,7 @@ Which results in the following install script
 
     # Create solution/project
     dotnet new sln --name "CarlCod_es"
-    dotnet new umbraco -n "CarlCod_es" --friendly-name "Carl" --email "carl@sargunar.com" --password "Pa55word!!" --development-database-type LocalDB
+    dotnet new umbraco -n "CarlCod_es" 
     dotnet sln add "CarlCod_es"
 
     dotnet run --project "CarlCod_es"
@@ -21,7 +21,7 @@ Which results in the following install script
 
 Once you've verified the project works, we'll add a new .NET 6 Class library project. 
 
-    dotnet new classlib -n "CarlCod_es.Core" --framework net6.0
+    dotnet new classlib -n "CarlCod_es.Core" 
     dotnet add "CarlCod_es.Core" package Umbraco.Cms.Core
     dotnet add "CarlCod_es.Core" package Umbraco.Cms.Infrastructure
     dotnet sln add "CarlCod_es.Core"
@@ -44,3 +44,7 @@ Disable uSync Content Mode by adding the following to appsettings. Reference : h
         "UiEnabledGroups": "Settings"
     }
   }
+
+To run the main project run
+
+    dotnet run --project "CarlCod_es"
