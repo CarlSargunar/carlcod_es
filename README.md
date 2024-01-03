@@ -36,11 +36,11 @@ Add the uSync project to the website, and configure it for Content Mode
 
 Disable uSync Content Mode by adding the following to appsettings. Reference : https://docs.jumoo.co.uk/usync/uSync/reference/config
 
-
-
-    "uSync": {
-        "Settings": {
-            // See https://github.com/KevinJump/uSync/issues/232
-            "ExportOnSave": "Settings" 
-        }
+  "uSync": {
+    "Settings": {
+        "ImportAtStartup": "None",
+        "ExportAtStartup": "None",
+        "ExportOnSave": "Settings",
+        "UiEnabledGroups": "Settings"
     }
+  }
