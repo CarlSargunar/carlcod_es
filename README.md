@@ -6,6 +6,8 @@ Using https://psw.codeshare.co.uk/ generate a script for a clean Umbraco install
 
 ![Installation Settings](media/psw.png)
 
+Create a global.json for .NET 6 using dotnet new globaljson --sdk-version 6.0.100
+
 Which results in the following install script
 
     # Ensure we have the latest Umbraco templates
