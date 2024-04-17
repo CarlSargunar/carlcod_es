@@ -34,7 +34,7 @@ Add a reference to the new project in the main project
 
 Add the uSync project to the website, and configure it for Content Mode
 
-    dotnet add "CarlCod_es" package uSync 
+    dotnet add "CarlCod_es" package uSync --version 10.7.3
 
 Disable uSync Content Mode by adding the following to appsettings. Reference : https://docs.jumoo.co.uk/usync/uSync/reference/config
 
