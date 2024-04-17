@@ -12,7 +12,7 @@ Exec the SQL
 
 You can also use the tool microsoft.sqlpackage to export a bacpac of the database. 
 
-    sqlpackage /Action:Export /scs:"Server=localhost;Database=carlcod_es;User Id=sa;Password=SQL_password123;TrustServerCertificate=true;" /tf:database/carlcod_es.bacpac
+    sqlpackage /Action:Export /scs:"Server=localhost;Database=carlcod_es_v10;User Id=sa;Password=SQL_password123;TrustServerCertificate=true;" /tf:Database/carlcod_es_v10.bacpac
 
 
 ## Copy Backup Back
