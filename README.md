@@ -11,7 +11,7 @@ Create a global.json for .NET 6 using dotnet new globaljson --sdk-version 6.0.10
 Which results in the following install script
 
     # Ensure we have the latest Umbraco templates
-    dotnet new -i Umbraco.Templates
+    dotnet new -i Umbraco.Templates::10.8.5 --force
 
     # Create solution/project
     dotnet new sln --name "CarlCod_es"
