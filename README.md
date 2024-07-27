@@ -24,8 +24,8 @@ Which results in the following install script
 Once you've verified the project works, we'll add a new .NET 6 Class library project. 
 
     dotnet new classlib -n "CarlCod_es.Core" 
-    dotnet add "CarlCod_es.Core" package Umbraco.Cms.Core
-    dotnet add "CarlCod_es.Core" package Umbraco.Cms.Infrastructure
+    dotnet add "CarlCod_es.Core" package Umbraco.Cms.Core -v 10.8.5
+    dotnet add "CarlCod_es.Core" package Umbraco.Cms.Infrastructure -v 10.8.5
     dotnet sln add "CarlCod_es.Core"
 
 Add a reference to the new project in the main project
